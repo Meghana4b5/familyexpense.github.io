@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Expense Calculator - ServiceNow Style</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sn-container">
+    <h2>Family Expense Calculator</h2>
+    <form id="expenseForm">
+      <div class="form-group">
+        <label for="rent">Rent:</label>
+        <input type="number" id="rent" placeholder="Enter rent amount" required>
+      </div>
+      <div class="form-group">
+        <label for="groceries">Groceries:</label>
+        <input type="number" id="groceries" placeholder="Enter groceries amount" required>
+      </div>
+      <div class="form-group">
+        <label for="transport">Transport:</label>
+        <input type="number" id="transport" placeholder="Enter transport amount" required>
+      </div>
+      <div class="form-group">
+        <label for="utilities">Utilities:</label>
+        <input type="number" id="utilities" placeholder="Enter utility bills" required>
+      </div>
+      <div class="form-group">
+        <label for="others">Others:</label>
+        <input type="number" id="others" placeholder="Enter other expenses">
+      </div>
+      <button type="button" onclick="calculateExpenses()">Calculate Total</button>
+    </form>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
